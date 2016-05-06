@@ -15,12 +15,19 @@ h1, h2, h3, h4, h5, h6, p{
     clear: both;
 }
 
-.gray-border{
-    border-bottom: 4px solid #55C8FF;
+.gray-border-song{
+    border-bottom: 4px solid #3A8AB1;
     width: 85%;
     margin-left:6%;
     border-radius: 20px 25px;
     padding-top: 5px;
+}
+
+.gray-border-event{
+    border-bottom: 4px solid #3A8AB1;
+    width: 85%;
+    margin-left:6%;
+    border-radius: 20px 25px;
 }
 /* Container div*/
 #container {
@@ -231,7 +238,7 @@ h1, h2, h3, h4, h5, h6, p{
     max-height: 640px;
     width: 70%;
     float: left;
-    border-right: 2px solid black;
+    border-right: 4px solid #1E1D1D;
 }
 
 /* Header for songs list */
@@ -290,6 +297,51 @@ h1, h2, h3, h4, h5, h6, p{
     float: left;
 }
 
+/* header for events */
+#event-header{
+    background-color: #1A86BA;
+    width: 100%;
+    float: left;
+    -moz-box-shadow:    inset  0px  8px 8px -8px #000000;
+    -webkit-box-shadow: inset  0px  8px 8px -8px #000000;
+     box-shadow:        inset  0px  8px 8px -8px #000000;
+}
+
+/* title event header */
+#event-header h1{
+    color: #ffffff;
+    text-align: center;
+}
+/* event container */
+.event-content{
+    width: 90%;
+    padding-top: 8px;
+    margin: auto;
+    clear: both;
+}
+/* name of the event */
+.event-name{
+    text-align: center;
+    color: #ffffff;
+}
+
+/* date of the event */
+.event-date{
+    text-align: center;
+    color: #B5B5B5;
+}
+/* read more of the event */
+.event-info{
+    text-align: right;
+}
+
+.event-link{
+    color: #2C2C2C;
+}
+.event-link:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
 /* newsletter div style */
 #newsletter{
     height: 80px;
