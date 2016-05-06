@@ -15,6 +15,13 @@ h1, h2, h3, h4, h5, h6, p{
     clear: both;
 }
 
+.gray-border{
+    border-bottom: 4px solid #55C8FF;
+    width: 85%;
+    margin-left:6%;
+    border-radius: 20px 25px;
+    padding-top: 5px;
+}
 /* Container div*/
 #container {
     padding-left: 0%;
@@ -243,13 +250,15 @@ h1, h2, h3, h4, h5, h6, p{
 /* div for song list - songs go here */
 .song-content{
     width: 100%;
+    padding-top: 3px;
     }
 /* spinning disk for songs */
 .song-disk{
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     margin-left: 2%; 
+    margin-bottom: 5px;
 }
 /* names of the songs */
 .song-name{
