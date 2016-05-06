@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, p{
     height: 100px;
 }
 
+.clear{
+    clear: both;
+}
+
 /* Container div*/
 #container {
     padding-left: 0%;
@@ -208,6 +212,75 @@ h1, h2, h3, h4, h5, h6, p{
     margin-right: 1%;
 }
 
+/* news div */
+#news{
+    background-color: #066897;
+    min-height: 440px;
+}
+/* new songs list div */
+#songs{
+    min-height: 440px;
+    height: auto;
+    max-height: 640px;
+    width: 70%;
+    float: left;
+    border-right: 2px solid black;
+}
+
+/* Header for songs list */
+.song-header{
+    background-color: #1A86BA;
+    width: 100%;
+    float: left;
+    -moz-box-shadow:    inset  0px  8px 8px -8px #000000;
+    -webkit-box-shadow: inset  0px  8px 8px -8px #000000;
+     box-shadow:        inset  0px  8px 8px -8px #000000;
+}
+.song-header h1{
+    color: #ffffff;
+    text-align: center;
+}
+/* div for song list - songs go here */
+.song-content{
+    width: 100%;
+    }
+/* spinning disk for songs */
+.song-disk{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-left: 2%; 
+}
+/* names of the songs */
+.song-name{
+    color: white;
+    display: inline-block;
+    padding-left: 1%;
+}
+
+/* name of the artists */
+.song-artis{
+    display: inline-block;
+    padding-left: 1%;
+}
+
+/* youtube link for the songs */
+.song-youtube{
+    padding-left: 1%;
+}
+
+.song-youtube-logo{
+    width: 35px;
+    height: 35px;
+    display: inline-block
+}
+/* upcoming events list div*/
+#events{
+    min-height: 440px;
+    width: 30%;
+    float: left;
+}
+
 /* newsletter div style */
 #newsletter{
     height: 80px;
@@ -239,20 +312,6 @@ h1, h2, h3, h4, h5, h6, p{
 /* submit button */
 #newsletter-button{
     margin-left: 4%;
-}
-
-/* news div */
-#news{
-    background-color: #066897;
-    height: 450px;
-}
-/* new songs list div */
-#songs{
-    
-}
-/* upcoming events list div*/
-#events{
-    
 }
 
 footer{

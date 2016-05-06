@@ -5,7 +5,29 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="js/jquery-1.12.3.min.js"></script>
-
+    <script type="text/javascript">
+        var looper;
+        var degrees = 0;
+        function rotateAnimation(el,speed){
+	   var elem = document.getElementById(el);
+            if(navigator.userAgent.match("Chrome")){   
+		  elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	   } else if(navigator.userAgent.match("Firefox")){
+           elem.style.MozTransform = "rotate("+degrees+"deg)";
+	   } else if(navigator.userAgent.match("MSIE")){
+           elem.style.msTransform = "rotate("+degrees+"deg)";
+	   } else if(navigator.userAgent.match("Opera")){
+           elem.style.OTransform = "rotate("+degrees+"deg)";
+	   } else {
+           elem.style.transform = "rotate("+degrees+"deg)";
+	   }
+	   looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	   degrees++;
+	   if(degrees > 359){
+           degrees = 1;
+	   }
+}
+    </script>
 </head>
 <body>
     <div id="container">
@@ -72,17 +94,69 @@
             </div>
         </div>
         <div class="blank"></div>
+        <div id="news">
+            <div id="songs">
+                <header class="song-header">
+                    <h1>Check out our latest songs!</h1>
+                </header>
+                
+                <div class="song-content">
+                    <img src="images/song-disk.png" class="img-responsive img-circle song-disk" id="rotate">
+                    <h3 class="song-name">Not Gonna Die </h3>
+                    <h4 class="song-artis"> by Skillet </h4> 
+                    <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
+                </div>
+                <div class="song-content">
+                    <img src="images/song-disk.png" class="img-responsive img-circle song-disk" id="rotate2">
+                    <h3 class="song-name"> Frame of Mind </h3>
+                    <h4 class="song-artis"> by Tristam &amp; Braken</h4>
+                    <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
+                </div>
+                <div class="song-content">
+                    <img src="images/song-disk.png" class="img-responsive img-circle song-disk" id="rotate3">
+                    <h3 class="song-name"> Afraid </h3>
+                    <h4 class="song-artis"> by The Neighbourhood </h4>
+                    <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
+                </div>
+                <div class="song-content">
+                    <img src="images/song-disk.png" class="img-responsive img-circle song-disk" id="rotate4">
+                    <h3 class="song-name"> Young &amp; Stupid </h3>
+                    <h4 class="song-artis"> by Travis Mills</h4>
+                    <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
+                </div>
+                <div class="song-content">
+                    <img src="images/song-disk.png" class="img-responsive img-circle song-disk" id="rotate5">
+                    <h3 class="song-name"> Use Somebody </h3>
+                    <h4 class="song-artis"> by Kings Of Leon</h4>
+                    <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
+                </div>
+                <div class="song-content">
+                    <img src="images/song-disk.png" class="img-responsive img-circle song-disk" id="rotate6">
+                    <h3 class="song-name"> King and Lionheart </h3>
+                    <h4 class="song-artis"> by Of Monsters and Men </h4>
+                    <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
+                </div>
+                <script>
+                    rotateAnimation("rotate",30);
+                    rotateAnimation("rotate2", 40);
+                    rotateAnimation("rotate3",35);
+                    rotateAnimation("rotate4",45);
+                    rotateAnimation("rotate5",25);
+                    rotateAnimation("rotate6",35);
+
+                </script>
+            
+            </div>
+            <div id="events">
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="blank"></div>
         <div id="newsletter">
             <label id="newsletter-text">Subscribe to our newsletter!</label>
             <input type="text" placeholder="example@email.com" id="newsletter-email" >
             <button class="btn btn-success" id="newsletter-button">Subscribe now!</button>
-        </div>
-        <div class="blank"></div>
-        <div id="news">
-            <div id="songs">
-            </div>
-            <div id="events">
-            </div>
         </div>
         <div class="blank"></div>
         <footer>
