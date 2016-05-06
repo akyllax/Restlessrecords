@@ -1,0 +1,269 @@
+body {
+    background-color: #353232;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #909090;
+}
+
+/* blank space */
+.blank {
+    height: 100px;
+}
+
+/* Container div*/
+#container {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: auto;
+    width: 90%;
+    background-color: #1E1D1D;
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* Top Menu header */
+#menu {
+    width: 100%;
+    margin: auto;
+}
+
+/* Header ul */
+#menu-content{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+    border-bottom: 2px solid #151515;
+}
+
+/* li of menu-content */
+#menu-content li {
+    float:left;
+}
+
+/* anchors of menu-content */
+#menu-content a{
+    font-size: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid #000000;
+}
+/* hover effect for menu-content anchors */
+#menu-content a:hover{
+    background-color: #004545;
+}
+
+/* active link */
+#active {
+    background-color: #139898;
+}
+/* div for disks and logo */
+#info {
+   min-height: 270px;
+   max-height: 278px;
+}
+
+/* div for left disk */
+#disk1 {
+    float: left;
+    width: 28%;
+    min-height: inherit;
+    max-height: inherit;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: url(../images/disk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* title for both disks */
+.disk-title{
+    text-align: center;
+}
+/* anchor(read more) for left disk */
+#disk1 a {
+    float: right;
+}
+/* text for left disk*/
+#disk1 p {
+    text-align: center;
+}
+
+/* div for logo */
+#logodiv {
+    float: left;
+    width: 40%;
+    min-height: inherit;
+    max-height: inherit;
+}
+/* logo image*/
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* div for right disk*/
+#disk2 {
+    float: left;
+    width: 28%;
+    min-height: inherit;
+    max-height: inherit;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: url(../images/disk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* Anchor(read more) for right disk */
+#disk2 a {
+    float: right;
+}
+/* text for right disk */
+#disk2 p {
+    text-align: center;
+}
+/* company-name-div space */
+#company-name-div {
+    height: 120px;
+}
+/* company name */
+#company-name{
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);.
+    -o-transform: rotate(-5deg);
+}
+/* div for team members*/
+#team {
+    height: 450px;
+    background-color: #007878;
+}
+/* header for team members */
+#team-header{
+    height: 60px;
+    background-color: #004545;
+    -moz-box-shadow:    inset  0  8px 8px -8px #000000;
+    -webkit-box-shadow: inset  0  8px 8px -8px #000000;
+     box-shadow:        inset  0  8px 8px -8px #000000;
+}
+
+/* h1 for team members inside the header */
+#team-header h1{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* div for the div of team members */
+#team-members{
+    height: 380px;
+    background-color: #007878;
+}
+/* divs for each team member*/
+.member {
+    margin-top: 10px;
+    margin-left: 1%;
+    width: 32%;
+    float: left;
+    height: 370px;
+}
+/* images for each team member */
+.member-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%     
+}
+/* names of the members */
+.member-name {
+    color: #ffffff;
+    text-align: center;
+}
+/* jobs of the members */
+.member-job {
+    color: #CBCBCB;
+    text-align: center;
+}
+
+/* 2nd row for team members */
+#team-members-row2{
+    height: 480px;
+    background-color: #007878;
+}
+/* separate divs for each member on the 2nd row */
+.member-row2{
+    float: left;
+    width: 48%;
+    height: 470px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* newsletter div style */
+#newsletter{
+    height: 80px;
+    background-color: #1B6B4D;
+    line-height: 80px;
+}
+
+/* text from newsletter */
+#newsletter-text{
+    color: #ffffff;
+    vertical-align:  middle;
+    line-height: normal;
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+    font-size: 203%;
+    text-align: center;
+}
+
+/* email input box */
+#newsletter-email{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 100%;
+    width: 40%;
+    border-radius: 8px;
+}
+
+/* submit button */
+#newsletter-button{
+    margin-left: 4%;
+}
+
+/* news div */
+#news{
+    background-color: #066897;
+    height: 450px;
+}
+/* new songs list div */
+#songs{
+    
+}
+/* upcoming events list div*/
+#events{
+    
+}
+
+footer{
+    height: 60px;
+    background-color: #0F0F0F;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#footer-text{
+    font-size: 140%;
+}
