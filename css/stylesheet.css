@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p{
     padding-left: 0%;
     padding-right: 0%;
     margin: auto;
-    width: 90%;
+    width: 88%;
     background-color: #1E1D1D;
     border-radius: 25px 25px 0px 0px;
 }
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, p{
 /* img for left disk */
 #disk1 {
     float: left;
-    width: 28%;
+    width: 26%;
     min-height: inherit;
     max-height: inherit;
     margin-left: 1%;
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 /* img for right disk*/
 #disk2 {
-    width: 27%;
+    width: 24%;
     min-height: inherit;
     max-height: inherit;
     background-image: url(../images/diskright.png);
