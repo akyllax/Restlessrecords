@@ -27,6 +27,36 @@
            degrees = 1;
 	   }
 }
+        $(document).ready(function(){
+            rotateAnimation("rotate",30);
+            rotateAnimation("rotate2",40);
+            rotateAnimation("rotate3",35);
+            rotateAnimation("rotate4",45);
+            rotateAnimation("rotate5",25);
+            rotateAnimation("rotate6",35);
+        });
+        
+        
+    $(function() {
+    var rotation = 0, 
+        scrollLoc = $(document).scrollTop();
+    $(window).scroll(function() {
+        var newLoc = $(document).scrollTop();
+        var diff = scrollLoc - newLoc;
+        rotation += diff, scrollLoc = newLoc;
+        var rotationStr = "rotate(" + rotation + "deg)";
+        $("#disk1").css({
+            "-webkit-transform": rotationStr,
+            "-moz-transform": rotationStr,
+            "transform": rotationStr,
+        });
+        $("#disk2").css({
+            "-webkit-transform": rotationStr,
+            "-moz-transform": rotationStr,
+            "transform": rotationStr,
+        });
+    });
+})
     </script>
 </head>
 <body>
@@ -40,20 +70,23 @@
             </ul>
         </header>
         <div id="info">
-            <div id="disk1">
+            <div id="content-disk1">
                 <h2 class="disk-title"> About us: </h2>
                 <p> Mea no labitur torquatos. Et vel erant conclusionemque, ut cum doming rationibus intellegam. Movet cotidieque ea sea, adhuc dolores ei eum. No impedit imperdiet est, id dicunt voluptaria eum, ex his delicata signiferumque.
                 </p>
                 <h3><a href="@">Read more</a></h3>
             </div>
+            <div id="disk1"></div>
             <div id="logodiv">
                 <img src="images/logo.png" class="img-responsive" id="logo">
             </div>
-            <div id="disk2">
-                <h3 class="disk-title">Why you should work with us:</h3>
-                <p> Omnesque vituperatoribus mei no, sea ut vide graecis assentior. Te sed alterum senserit posidonium, esse propriae ei est. Ea eum amet nibh iisque, pri ea minim intellegat.Omnesque vituperatoribus mei no.</p>
-                <h3><a href="@"> Read more</a></h3>
-
+            <div id="disk2-all">
+                <div id="content-disk2">
+                    <h3 class="disk-title">Why you should work with us:</h3>
+                    <p> Omnesque vituperatoribus mei no, sea ut vide graecis assentior. Te sed alterum senserit posidonium, esse propriae ei est. Ea eum amet nibh iisque, pri ea minim intellegat.Omnesque vituperatoribus mei no.</p>
+                    <h3><a href="@"> Read more</a></h3>
+                </div>
+                <div id="disk2"></div>
             </div>
         </div>
         <div id="company-name-div">
@@ -141,14 +174,6 @@
                     <h4 class="song-artis"> by Of Monsters and Men </h4>
                     <a href="@" class="song-youtube"><img src="images/youtube.png" class="song-youtube-logo"></a>
                 </div>
-                <script>
-                    rotateAnimation("rotate",30);
-                    rotateAnimation("rotate2", 40);
-                    rotateAnimation("rotate3",35);
-                    rotateAnimation("rotate4",45);
-                    rotateAnimation("rotate5",25);
-                    rotateAnimation("rotate6",35);
-                </script>
             </div>
             <div id="events">
                 <div id="event-header">

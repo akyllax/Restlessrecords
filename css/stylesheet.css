@@ -85,7 +85,34 @@ h1, h2, h3, h4, h5, h6, p{
    max-height: 278px;
 }
 
-/* div for left disk */
+
+/* title for both disks */
+.disk-title{
+    color: #ffffff;
+    text-align: center;
+}
+/* anchor(read more) for left disk */
+#content-disk1 a {
+    float: right;
+}
+/* text for left disk*/
+#content-disk1 p {
+    color: #ffffff;
+    text-align: center;
+}
+/* content for left disk */
+#content-disk1 {
+    float: left;
+    width: 28%;
+    min-height: inherit;
+    max-height: inherit;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: 1;
+    position: absolute;
+}
+
+/* img for left disk */
 #disk1 {
     float: left;
     width: 28%;
@@ -97,18 +124,7 @@ h1, h2, h3, h4, h5, h6, p{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-/* title for both disks */
-.disk-title{
-    text-align: center;
-}
-/* anchor(read more) for left disk */
-#disk1 a {
-    float: right;
-}
-/* text for left disk*/
-#disk1 p {
-    text-align: center;
+    z-index: 0;
 }
 
 /* div for logo */
@@ -124,26 +140,40 @@ h1, h2, h3, h4, h5, h6, p{
     margin-right: auto;
     margin-left: auto;
 }
-
-/* div for right disk*/
-#disk2 {
+#disk2-all{
     float: left;
     width: 28%;
     min-height: inherit;
     max-height: inherit;
-    margin-left: 1%;
-    margin-right: 1%;
+}
+/* img for right disk*/
+#disk2 {
+    width: 27%;
+    min-height: inherit;
+    max-height: inherit;
     background-image: url(../images/disk.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    z-index: 0;
+    position: absolute;
+}
+/* content for right disk */
+#content-disk2 {
+    float: left;
+    width:100%; 
+    min-height: inherit;
+    max-height: inherit;
+    z-index: 1;
+    position:relative;
 }
 /* Anchor(read more) for right disk */
-#disk2 a {
+#content-disk2 a {
     float: right;
 }
 /* text for right disk */
-#disk2 p {
+#content-disk2 p {
+    color: #ffffff;
     text-align: center;
 }
 /* company-name-div space */
@@ -238,7 +268,6 @@ h1, h2, h3, h4, h5, h6, p{
     max-height: 640px;
     width: 70%;
     float: left;
-    border-right: 4px solid #1E1D1D;
 }
 
 /* Header for songs list */
@@ -295,6 +324,7 @@ h1, h2, h3, h4, h5, h6, p{
     min-height: 440px;
     width: 30%;
     float: left;
+    border-left: 4px solid #1E1D1D;
 }
 
 /* header for events */
