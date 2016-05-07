@@ -264,12 +264,9 @@ h1, h2, h3, h4, h5, h6, p{
 /* new songs list div */
 #songs{
     min-height: 440px;
-    height: auto;
-    max-height: 640px;
     width: 70%;
     float: left;
 }
-
 /* Header for songs list */
 .song-header{
     background-color: #1A86BA;
